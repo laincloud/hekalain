@@ -1,4 +1,4 @@
-FROM laincloud/centos-lain:20160428
+FROM laincloud/centos-lain:20160428.1
 
 RUN yum -y install cmake patch \
     && yum -y clean all \
