@@ -7,7 +7,7 @@ RUN yum -y install cmake patch \
     && git checkout versions/0.10 \
     && source ./env.sh \
     && go get golang.org/x/net/context \
-    && git clone http://laingit.bdp.cc/lain/hekalain.git externals/hekalain \
+    && git clone https://github.com/laincloud/hekalain.git externals/hekalain \
     && cp externals/hekalain/fixtures/plugin_loader.cmake cmake \
     && source ./build.sh \
     && cd /heka_build/src/build \
